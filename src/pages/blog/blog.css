@@ -1,0 +1,122 @@
+.blog {
+    padding: 5rem;
+}
+.blog__title {
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+}
+
+.blog__card__container {
+    display: flex;
+}
+
+.blog__card__group-A {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.blog__card__group-A .blog__card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__card__group-A .blog__card .blog__card-body {
+    height: 100%;
+    position: relative;
+}
+
+.blog__card__group-A .blog__card .blog__card-body h2 {
+    font-size: 20px;
+}
+
+.blog__card__group-A .blog__card p:first-child {
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+}
+
+.blog__card__group-A .blog__card p:last-child {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.blog__card__group-B {
+    flex: 1.5;
+}
+
+.blog__card__group-B__roll-A,
+.blog__card__group-B__roll-B {
+    display: flex;
+}
+
+.blog__card__group-B__roll-A {
+    margin-bottom: 2rem;
+}
+
+.blog__card__group-B .blog__card p:first-child {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.blog__card__group-B .blog__card h2 {
+    font-size: 20px;
+}
+
+.blog__card__group-B .blog__card p:last-child {
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+.blog__card__group-B .blog__card {
+    flex: 1;
+}
+
+.blog__card__group-B__roll-A .blog__card:first-child,
+.blog__card__group-B__roll-B .blog__card:first-child {
+    margin-right: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .blog {
+        padding: 5rem 1rem;
+    }
+    .blog__card__group-A {
+        margin-right: 1rem;
+    }
+    .blog__card__group-B__roll-A {
+        margin-bottom: 1rem;
+    }
+    .blog__card__group-B__roll-A .blog__card:first-child,
+    .blog__card__group-B__roll-B .blog__card:first-child {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blog__card__container {
+        flex-direction: column;
+    }
+    .blog__card__group-A {
+        margin: 0 0 1rem 0;
+    }
+    .blog__card__group-A .blog__card .blog__card-body {
+        position: unset;
+    }
+    .blog__card__group-A .blog__card p:last-child {
+        position: unset;
+        bottom: unset;
+        font-size: 13px;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blog__card__group-B__roll-A,
+    .blog__card__group-B__roll-B {
+        flex-direction: column;
+    }
+    .blog__card__group-B__roll-A .blog__card:first-child,
+    .blog__card__group-B__roll-B .blog__card:first-child {
+        margin: 0 0 1rem 0;
+    }
+}

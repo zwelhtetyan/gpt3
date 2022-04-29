@@ -30,6 +30,21 @@
     font-size: 18px;
     margin-right: 1rem;
     font-weight: 700;
+    position: relative;
+}
+
+.nav__link-container p:hover::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-text);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+.nav__link-container p:hover a {
+    color: var(--color-text);
 }
 
 .nav__sign-container {
@@ -38,6 +53,13 @@
     margin-left: auto;
     font-size: 16px;
     font-weight: 700;
+}
+
+.nav__sign-container p {
+    cursor: pointer;
+}
+.nav__sign-container p:hover {
+    color: var(--color-text);
 }
 
 .nav__sign-container button {
@@ -51,6 +73,11 @@
     color: white;
     user-select: none;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.nav__sign-container button:hover {
+    background-color: #d73f1e;
 }
 
 .nav__menu-container {

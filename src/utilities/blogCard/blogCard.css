@@ -1,0 +1,19 @@
+.blog__card {
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: var(--color-blog);
+    transition: 0.3s linear;
+}
+
+.blog__card:hover {
+    transform: scale(0.99);
+}
+
+.blog__card img {
+    width: 100%;
+}
+
+.blog__card-body {
+    padding: 1rem;
+}

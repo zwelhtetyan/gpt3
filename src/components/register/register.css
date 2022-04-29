@@ -1,0 +1,52 @@
+.register {
+    padding: 5rem 5rem 1rem 5rem;
+}
+
+.register__card {
+    background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.register__card p {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.register__card h2 {
+    font-size: 1.3rem;
+}
+
+.register__card-button button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: black;
+    color: white;
+}
+
+.register__card-button button:hover {
+    color: var(--color-text);
+}
+
+@media screen and (max-width: 900px) {
+    .register {
+        padding: 5rem 1rem 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .register__card {
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+    }
+    .register__card-button {
+        margin-top: 1rem;
+    }
+}

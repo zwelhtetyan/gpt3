@@ -28,7 +28,7 @@
     font-size: 17px;
     line-height: 27px;
     color: var(--color-text);
-    margin: 1.5rem 0;
+    margin: 2rem 0;
 }
 
 .header__input-and-button {
@@ -52,6 +52,10 @@
     border: none;
     outline: none;
     border-radius: 0 5px 5px 0;
+    color: white;
+}
+.header__input-and-button button:hover {
+    background-color: #d73f1e;
 }
 
 .header__people-and-text {

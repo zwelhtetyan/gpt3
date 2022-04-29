@@ -1,7 +1,6 @@
 import './App.css';
-import Brand from './components/brand/Brand';
-import Navbar from './components/navbar/Navbar';
-import { Home, WhatIsGpt3, Feature, Possibility } from './pages';
+import { Brand, Navbar, Register } from './components';
+import { Home, WhatIsGpt3, Feature, Possibility, Blog, Footer } from './pages';
 
 const App = () => {
     return (
@@ -12,6 +11,9 @@ const App = () => {
             <WhatIsGpt3 />
             <Feature />
             <Possibility />
+            <Register />
+            <Blog />
+            <Footer />
         </div>
     );
 };
