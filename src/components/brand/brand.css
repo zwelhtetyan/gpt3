@@ -1,0 +1,12 @@
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.brand img {
+    margin: 1rem;
+}

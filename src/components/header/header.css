@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+.header__left {
+    flex: 1;
+}
+.header__right__img-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__right__img-container img {
+    width: 100%;
+}
+
+.header__title {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+    word-spacing: 5px;
+}
+
+.header__description {
+    font-size: 17px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin: 1.5rem 0;
+}
+
+.header__input-and-button {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.header__input-and-button input {
+    background: #052d56;
+    border-radius: 5px 0px 0px 5px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+
+.header__input-and-button button {
+    width: 120px;
+    background-color: #ff4820;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.header__people-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+    color: white;
+}
+.header__people-and-text img {
+    width: 150px;
+    margin-right: 0.5rem;
+}
+
+.header__people-and-text p {
+    font-style: italic;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .header__left {
+        margin-bottom: 3rem;
+    }
+    .header__right__img-container img {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding-top: 1rem;
+    }
+}

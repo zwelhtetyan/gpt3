@@ -1,0 +1,91 @@
+.whatisgpt {
+    padding: 1rem 5rem;
+    padding-top: 5rem;
+}
+
+.whatisgpt__card-container {
+    padding: 2rem;
+    border-radius: 3px;
+}
+
+.whatisgpt__card-container .card {
+    display: flex;
+    align-items: flex-start;
+}
+
+.whatisgpt__card-container .card .card__title {
+    color: white;
+    flex: 1;
+}
+
+.whatisgpt__card__center-text {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.whatisgpt__card__center-text h2 {
+    flex: 2;
+}
+.whatisgpt__card__center-text p {
+    color: #ff8a71;
+    flex: 1;
+    text-align: end;
+    font-size: 13px;
+    align-self: flex-end;
+    font-style: italic;
+}
+.gpt3__cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gpt3__cards .card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.gpt3__cards .card .card__title {
+    flex: unset;
+    margin-bottom: 1rem;
+}
+
+.gpt3__cards .card .card__text {
+    flex: unset;
+}
+
+@media screen and (max-width: 900px) {
+    .whatisgpt {
+        padding: 1rem;
+        padding-top: 5rem;
+    }
+    .whatisgpt__card__center-text p {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .whatisgpt__card-container {
+        padding: 1rem;
+    }
+    .whatisgpt__card__center-text {
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+
+    .whatisgpt__card__center-text p {
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .whatisgpt__card-container .card {
+        flex-direction: column;
+    }
+    .whatisgpt__card-container .card .card__title {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,17 @@
+.gradient__bar {
+    width: 55px;
+    height: 3px;
+    border-radius: 1px;
+    margin-bottom: 0.7rem;
+    background: linear-gradient(
+        90deg,
+        rgba(174, 103, 250, 1) 0%,
+        rgba(244, 152, 103, 1) 100%
+    );
+}
+
+.card__text {
+    flex: 2;
+    font-size: 15px;
+    color: var(--color-text);
+}
