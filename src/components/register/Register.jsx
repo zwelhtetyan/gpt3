@@ -1,9 +1,10 @@
 import React from 'react';
 import './register.css';
+import AOS from 'aos';
 
 const Register = () => {
     return (
-        <div className='register'>
+        <div className='register' data-aos='flip-up'>
             <div className='register__card'>
                 <div className='register__card-text'>
                     <p>Request Early Access to Get Started</p>
@@ -19,5 +20,7 @@ const Register = () => {
         </div>
     );
 };
+
+AOS.init();
 
 export default Register;

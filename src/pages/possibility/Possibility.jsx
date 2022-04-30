@@ -1,14 +1,15 @@
 import React from 'react';
 import './possibility.css';
 import possibility from '../../assets/possibility.png';
+import AOS from 'aos';
 
 const Possibility = () => {
     return (
         <div className='possibility padding__section' id='possibility'>
-            <div className='possibility__left'>
+            <div className='possibility__left' data-aos='fade-right'>
                 <img src={possibility} alt='' />
             </div>
-            <div className='possibility__right'>
+            <div className='possibility__right' data-aos='fade-left'>
                 <p>Request Early Access to Get Started</p>
                 <h2 className='gradient__text'>
                     The possibilities are beyond your imagination
@@ -24,5 +25,7 @@ const Possibility = () => {
         </div>
     );
 };
+
+AOS.init();
 
 export default Possibility;

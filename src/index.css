@@ -20,9 +20,31 @@
 
 body {
     background-color: var(--color-bg);
+    overflow: overlay;
 }
 
 a {
     text-decoration: none;
     color: unset;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(103.22deg, #8c3de0 -13.86%, #ec7e43 99.55%);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
 }

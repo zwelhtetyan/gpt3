@@ -2,6 +2,7 @@ import './navbar.css';
 import logo from '../../assets/logo.svg';
 import { useState } from 'react';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
+import AOS from 'aos';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
     );
 
     return (
-        <div className='nav padding__section bg__gradient'>
+        <div className='nav padding__section bg__gradient' data-aos='fade-down'>
             <div className='nav__logo'>
                 <a href='#home'>
                     <img src={logo} alt='logo' />
@@ -67,5 +68,7 @@ const Navbar = () => {
         </div>
     );
 };
+
+AOS.init();
 
 export default Navbar;

@@ -1,9 +1,10 @@
 import React from 'react';
 import './blogCard.css';
+import AOS from 'aos';
 
 const BlogCard = ({ img, date, title }) => {
     return (
-        <div className='blog__card'>
+        <div className='blog__card' data-aos='zoom-in'>
             <img src={img} alt='' />
             <div className='blog__card-body'>
                 <p>{date}</p>
@@ -13,5 +14,7 @@ const BlogCard = ({ img, date, title }) => {
         </div>
     );
 };
+
+AOS.init();
 
 export default BlogCard;

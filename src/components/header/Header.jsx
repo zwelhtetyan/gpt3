@@ -2,11 +2,12 @@ import React from 'react';
 import './header.css';
 import people from '../../assets/people.png';
 import ai from '../../assets/ai.png';
+import AOS from 'aos';
 
 const Header = () => {
     return (
         <div className='header'>
-            <div className='header__left'>
+            <div className='header__left' data-aos='fade-right'>
                 <h1 className='header__title gradient__text'>
                     Let’s Build Something amazing with GPT-3 OpenAI
                 </h1>
@@ -27,11 +28,13 @@ const Header = () => {
                     </p>
                 </div>
             </div>
-            <div className='header__right__img-container'>
+            <div className='header__right__img-container' data-aos='fade-left'>
                 <img src={ai} alt='ai' />
             </div>
         </div>
     );
 };
+
+AOS.init();
 
 export default Header;
